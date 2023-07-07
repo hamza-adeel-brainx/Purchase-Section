@@ -1,0 +1,694 @@
+.product__title{ 
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0px !important;
+  }
+  .product__text.subtitle
+  {
+  
+    font: 700 16px/30px Muli !important;
+    margin-top: 0;
+    margin-bottom: -9px;
+  }
+  
+  .after{ text-align: right; font: normal normal bold 35px/42px Zilla Slab; letter-spacing: 0px; color: #C70072; text-transform: lowercase; } 
+  
+  
+  .before{ text-align: right;
+    letter-spacing: 0px;
+    color: #585858;
+    text-transform: lowercase;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 23px;
+    font-family: 'zilla slab';
+      position:relative;
+  }
+  
+  .before::after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 95%;
+      background: #585858;
+      top: 59%;
+      left: 0;
+  }
+  .variants-heading .product-form__input{
+    width: 100% !important;
+    max-width: 100% !important;
+      justify-content: space-between;
+    display: flex;
+  }
+  .product-form__input input[type=radio]:checked+label{
+  
+  color: #000000 !important;
+  background: #C700720D !important;
+   border: 1px solid #C70072 !important;
+  font: normal normal bold 18px/22px Muli !important;
+  
+   
+  }
+  .product-form__input input[type=radio]+label{
+    width: calc(50% - 10px) !important;
+      padding: 15px 10px!important;
+   border-radius: 10px !important;
+  font: normal normal normal 18px/22px Muli !important;
+       border: 1px solid #000000 !important;
+  
+  }
+  .selected-purchase-option{
+  display:none !important;
+  }
+  /* if not variants add border  */
+  .skio-plan-picker{
+  border:none !important;
+  padding: 7px 0 0 !important;
+  margin-top: 0px !important;
+  border-top: 1px dashed #CFCFCF !important;
+  }
+  
+  .variants-heading{
+  border-top: 1px dashed #CFCFCF;
+  margin-bottom:0px !important;
+  }
+  .variants-heading p{
+    font: normal normal 500 18px/24px Zilla Slab !important;
+    letter-spacing: 0px;
+    color: #373535;
+    
+  }
+  .skio-top-text{
+    font: normal normal 500 18px/24px Zilla Slab !important;
+    letter-spacing: 0px;
+    color: #373535;
+    margin: 6px 0 !important;
+    margin-bottom: auto;
+    margin-bottom: 9px!important;
+  }
+  
+  .skio-group-topline .skio-price{
+    display:none !important;
+  }
+  .price-span{
+  font: normal normal 600 20px/22px Zilla Slab !important;
+  letter-spacing: 0px !important;
+  color: #000000 !important;
+  margin-bottom:2px !important;
+  align-items: end !important;
+  margin-bottom:5px !important;
+  }
+  
+  .price-per-capsule{
+   text-align: right;
+    font: normal normal 600 12px/30px Zilla Slab;
+    letter-spacing: 0px;
+    color: #373535;
+    opacity: 1;
+    padding:0px;
+  
+  }
+  
+  .skio-onetime-group-title + ul {
+    display: none;
+  }
+  
+  /* 
+  Just Calm
+  .skio-frequency-wrapper{
+  text-align: left;
+  font: normal normal normal 16px/30px Muli;
+  letter-spacing: 0px;
+  color: #585858;
+    margin-left: 29px !important;
+    margin-top: 2px !important;
+  }
+  
+  
+  .skio-frequency-wrapper + ul li:before {
+    content: url(https://cdn.shopify.com/s/files/1/0170/5384/3556/files/check-icon.svg?v=1687350058);
+    position: relative;
+    top: 0px;
+    height: 10px;
+  }
+  
+  .skio-frequency-wrapper + ul {
+  margin:0px !important;
+  }
+  */
+  .skio-frequency-wrapper + ul li {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+  font: normal normal normal 16px/30px Muli;
+  letter-spacing: 0px;
+  color: #585858;
+  }
+  
+  /* 
+  Just Calm
+  select.skio-frequency {
+    width: 230px !important;
+    min-width: 230px !important;
+    border: none;
+    background-color: transparent;
+    color: #c70072;
+    font-weight: 800;
+    width: min-content;
+    max-width: fit-content;
+    min-width: fit-content;
+    padding-top: 8px !important;
+    text-decoration: underline !important;
+    margin-left: -32px;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="4px" version="1.1" viewBox="0 0 72 43"><path d="M 40.721 40.66 L 70.067 11.314 C 72.644 8.737 72.644 4.49 70.067 1.913 C 67.49 -0.664 63.242 -0.664 60.666 1.913 L 36.02 26.479 L 11.374 1.833 C 8.798 -0.744 4.55 -0.744 1.973 1.833 C 0.685 3.122 0 4.866 0 6.534 C 0 8.279 0.682 9.946 1.973 11.235 L 31.319 40.581 C 33.896 43.238 38.144 43.238 40.721 40.661 L 40.721 40.66 Z" style="fill: %23C70072;"/></svg>');
+  } 
+  */
+  
+  
+  .radio-select-new + svg {
+    display: none;
+  }
+  
+  .radio-select-new g#Ellipse_485 {
+    fill: #fff;
+    stroke: #fff;
+  }
+  .radio-select-new g#Ellipse_484 {
+    stroke: #000;
+  }
+  
+  .skio-group-container--selected .price-per-capsule
+  {
+    color:#C70072
+  
+  }
+  .skio-group-container--selected .radio-select-new g#Ellipse_485 {
+    fill: #C70072;
+    stroke: #C70072;
+  }
+  .skio-group-container--selected .radio-select-new g#Ellipse_484 {
+    stroke: #C70072;
+  }
+  .price-span svg{
+  display:none;
+  }
+  #selected-icon{
+  display:none;
+  }
+  .per-capsule-otp-price{
+    background-color: transparent !important;
+  }
+  .per-capsule-sub-price{
+  background-color: transparent !important;
+  }
+  svg#calendar-icon {
+    position: relative;
+    top: 3px;
+  }
+  .skio-group-title{
+  width:100% !important;
+  gap:17px!important;
+  margin-top: -11px !important;
+  border:none !important;
+  }
+  .price-container-new{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 10px;
+  
+  }
+  .skio-group-title .price-container-new{
+  min-height: 71px;
+  }
+  .per-capsule-sub-price{
+    margin-right: 0px !important;
+    text-align: right!important;
+  padding:0px !important;
+  }
+  .per-capsule-otp-price{
+    margin-right: 0px !important;
+    text-align: right!important;
+  padding:0px !important;
+  }
+  .skio-group-container{
+  width:100% !important;
+  background-color: #FFFFFF !important;
+  box-shadow:none !important;
+  border: 1px solid #000000 !important;
+  opacity: 1;
+  }
+  
+  .shipping-text{
+    text-align: right;
+    font: normal normal 600 12px/16px Zilla Slab;
+    letter-spacing: 0px;
+    color: #000000;
+    padding-left: 5px;
+  }
+  .skio-onetime-group-title{
+  width:100% !important;
+  margin-top: -10px;
+      margin-bottom: -11px;
+      border-bottom:none !important;
+  }
+  
+  .skio-group-container--selected{
+  box-shadow: 0px 0px 10px #C700724D!important;
+  border: 1px solid #C70072!important;
+  }
+  
+  
+  .skio-onetime-group-title{gap:17px!important;}
+  
+  .discount-info{
+  text-align: left;
+  font: normal normal bold 16px/18px Muli;
+  letter-spacing: 0px;
+  color: #585858;
+  }
+  .skio-group-content{
+  padding-left: 40px;
+  width: 100% !important;
+  }
+  .skio-onetime-group-title .price-span {
+   margin-bottom:0px!important;
+  }
+  
+  
+  
+  .skio-group-title, .skio-onetime-group-title {
+    letter-spacing: normal;
+    font: normal normal 600 20px/22px Zilla Slab;
+    letter-spacing: 0px;
+    color: #000000;
+      border-bottom: 1px solid #ECECEC;
+    padding: 0 10px 0 30px;
+     
+  }
+  
+  label.skio-group-label {
+    padding-left: 0 !important;
+    padding-right: 0;
+  }
+  variant-radios, variant-selects {
+    left: 0 !important;
+  }
+  .skio-group-content-selected li span, .skio-group-topline li span
+  {
+  line-height: 25px ;
+  }
+  .per-capsule-sub-price-mobile ,.per-capsule-otp-price-mobile, .price-per-capsule-container{display: none !important;}
+  .skio-frequency-wrapper-ul-display{
+  display:block !important;
+  max-width: 274px !important;
+  background: #F5F2F2;
+  min-height: 44px;
+  }
+  
+  
+  .product .product-form__submit.button *{
+  
+    font:normal normal bold 14px/18px Muli !important;
+  }
+  
+  
+  
+  .skio-group-container:nth-of-type(2)  label.skio-group-label {
+  padding-bottom:1px !important;
+  }
+  .bf-cm-banners__master{
+  display:none;
+  }
+  .skio-frequency-wrapper{
+    display:none !important;
+    }
+    .sub-details-popup{
+      text-align: right;
+      text-decoration: underline;
+      font: normal normal 600 14px/12px Zilla Slab;
+      letter-spacing: 0px;
+      color: #8A8A8A;
+      opacity: 1;
+      display: flex;
+      gap: 2px;
+      position: absolute;
+      /* align-items: center; */
+      z-index: 1;
+      top: 57px;
+      right: 6px;
+  
+  }
+  .skio-frequency-wrapper + ul:after {
+    border-style: solid;
+    border-width: 20px 20px 0 0;
+    border-top-color: #081D33;
+    border-bottom-color: #00000000;
+    border-left-color: #00000000;
+    border-right-color: #00000000;
+    position: absolute;
+    left: 83%;
+    content: "";
+    z-index: 1;
+    bottom: 86px;
+    transform: rotateZ(45deg);
+  }
+  
+    .skio-frequency-wrapper + ul:before {
+    content: 'How subscription work';
+    text-align: left;
+    font: normal normal bold 13px/25px Muli;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+  }
+  .skio-frequency-wrapper + ul li:before {
+   content: '';
+    color: #FFFFFF;
+    font-size: 40px;
+    top: 6px;
+    height: 6px;
+    width: 6px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    position: relative;
+  }
+    .skio-frequency-wrapper + ul li ,.skio-frequency-wrapper + ul li .discount-info{
+     gap: 15px !important;
+  }
+    .skio-frequency-wrapper + ul li span ,.skio-frequency-wrapper + ul li span .discount-info{
+      text-align: left !important;
+    font: normal normal normal 12px/17px Muli !important;
+    letter-spacing: 0px !important;
+    color: #FFFFFF !important;
+    opacity: 1 !important;
+   
+  }
+  /*
+  just calm
+   select.skio-frequency{
+  text-align: left !important;
+  font: normal normal 600 14px/27px Lato !important;
+  letter-spacing: 0px !important;
+  color: #000000 !important;
+    background-image:url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="4px" version="1.1" viewBox="0 0 72 43"><path d="M 40.721 40.66 L 70.067 11.314 C 72.644 8.737 72.644 4.49 70.067 1.913 C 67.49 -0.664 63.242 -0.664 60.666 1.913 L 36.02 26.479 L 11.374 1.833 C 8.798 -0.744 4.55 -0.744 1.973 1.833 C 0.685 3.122 0 4.866 0 6.534 C 0 8.279 0.682 9.946 1.973 11.235 L 31.319 40.581 C 33.896 43.238 38.144 43.238 40.721 40.661 L 40.721 40.66 Z" style="fill: %23000000;"/></svg>');
+    background-position: calc(100% - 12px) 50%;
+  } */
+  
+  .skio-group-content-selected{
+      display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+  }
+  .skio-group-content {
+  padding-left: 23px !important;
+    padding-right: 15px;
+  
+  }
+  .skio-frequency-wrapper + ul {
+      display: none;
+    position: absolute;
+    bottom: -104px;
+    z-index: 2;
+    right: 10px;
+    background-color: #081D33;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 6px;
+    opacity: 1;
+    min-width: 296px;
+    min-height: 97px;
+    padding-left: 25px !important;
+    padding-top: 7px !important;
+    margin:0px !important;
+  }
+  .delivery-frequency{
+  display:none;
+  }
+  /* 
+  Just Calm
+  .skio-frequency-wrapper:before {
+    content: 'Every';
+    text-align: left;
+    font: normal normal normal 14px/27px Lato;
+    letter-spacing: 0px;
+    color: #000000;
+    padding-left: 12px;
+  } */
+  @media screen and (max-width: 1200px) {
+    .per-capsule-sub-price, .per-capsule-otp-price {
+      display: block !important;
+    }
+  }
+  @media screen and (max-width: 1158px) {
+    .product__title h1{
+      font-size: 27px !important;
+      line-height: 30px !important;
+    }
+    .after{
+      font-size: 27px !important;
+      line-height: 30px !important;
+    }
+    .before{
+      font-size: 20px !important;
+    }
+  }
+    @media screen and (max-width:1008px) {
+      .price-span{
+          flex-direction:column;
+            text-align:right;
+      }
+      
+  }
+  @media screen and (max-width:992px) {
+    .product__title h1{
+      font-size: 22px !important;
+      line-height: 27px !important;
+    }
+    .after{
+      font-size: 22px !important;
+      line-height: 27px !important;
+    }
+    .before{
+      font-size: 15px !important;
+    }
+    
+  }
+  @media screen and (max-width:990px) {
+    .product-form__input input[type=radio]:checked+label{
+    font:normal normal bold 13px/22px Muli !important;
+    }
+    .product-form__input input[type=radio]+label{
+  font: normal normal normal 13px/22px Muli !important;
+    }
+    
+  }
+  @media screen and (max-width:990px) and (min-width:750px) {
+  .skio-group-title, .skio-onetime-group-title{
+  
+    padding-left: 10px !important;
+  }
+  
+  }
+  @media screen and (max-width:749px) {
+    
+    .main-product-section{
+  padding-top:0 !important;
+  }
+    .product__text.subtitle {
+    line-height: 22px !important;
+  }
+     .product__title h1{
+        font-size:27px !important;
+      line-height:30px !important;
+    }
+    .after{
+    font-size:27px !important;
+      line-height:30px !important;
+    }
+    .price-span{
+      color:#585858 !important;
+      font: normal normal 600 18px/22px Zilla Slab !important; 
+    }
+    .shipping-text{
+      color:#585858 !important;
+    }
+    .skio-top-text{
+      font: normal normal 500 16px/19px Zilla Slab !important;
+  
+    }
+    .variants-heading p{
+      font: normal normal 500 16px/19px Zilla Slab !important;
+    }
+    .skio-group-title , .skio-onetime-group-title{
+    padding-left: 13.5px !important;
+    }
+    
+    .skio-group-container--selected .price-span
+    {
+      color:#C70072 !important;
+    }
+    .skio-group-container--selected .price-per-capsule
+    {
+      color:#000000!important;
+    }
+   .skio-group-title {
+      border-bottom: none !important;
+  }
+    .skio-group-container{
+  box-shadow:none !important;
+  border: 0.5px solid #8A8A8A!important;
+      margin-top:0px !important;
+  }
+    .skio-group-container:nth-of-type(2),
+  .skio-group-container:nth-of-type(3)  {
+    border-radius: 10px !important;
+    margin-top: 0px !important;
+    }
+  
+  
+    .product-form__input input[type=radio]:checked+label {
+      font: normal normal normal 14px/22px Muli !important;
+    }
+    .product-form__input input[type=radio]+label {
+       font: normal normal normal 14px/22px Muli !important;
+            color:#373535 !important;
+  
+    }
+    .skio-group-title, .skio-onetime-group-title
+    {
+    color:#585858 !important;
+    font: normal normal 600 18px/22px Zilla Slab !important;
+    }
+  
+  }
+  
+  /**********Added by arshia **********/
+  @media screen and (max-width:576px) {
+  .thumbnail-slider .thumbnail-list.slider {
+      display: none !important;
+  }
+    
+  .product__modal-opener {
+      width: 100% !important;
+      max-height: 250px !important;
+  }
+  .product .product__media {
+      max-height: 250px !important;
+      padding-top: 250px !important;
+  }
+  .product .media>*:not(.zoom):not(.deferred-media__poster-button), .media model-viewer {
+      max-height: 250px !important;
+      object-fit: contain !important;
+  }
+    /**********header **********/
+  .header__heading-logo {
+      max-width: 170px !important;
+  }
+  .header-wrapper{
+      border-bottom: 0 !important;
+  }
+  .mobile-search-bar {
+      margin-bottom: 0 !important;
+  height: 55px !important;
+  }
+  /**********product details ******/
+  .product__title {
+      margin-bottom: 6px !important;
+  }
+  .product__text.subtitle {
+      font: 700 15px/21px Muli !important;
+      margin-top: 0px !important;
+  }
+    .header__search {
+      top: -18px !important;
+      }
+  .section-template--14898942115905__main-padding {
+      padding-top: 0px !important;
+  }  
+    .variants-heading{
+    margin-top: 15px !important;
+    }
+  }
+  /* 
+  Just calm
+  @media screen and (max-width:513px) {
+    .skio-frequency-wrapper{
+        max-width: 234px !important;
+    }
+    
+    select.skio-frequency{
+    background-position: calc(100% - 49px) 50% !important;
+          min-width: 230px!important;
+      margin-left: -4px !important;
+    }
+  }
+  
+  @media screen and (max-width:476px) {
+  
+  .skio-frequency-wrapper:before {
+    display:none;
+    }
+    .skio-frequency-wrapper{
+    max-width: 189px !important;
+      
+    }
+      select.skio-frequency{
+      margin-left: 0px !important;
+    }
+      }    
+       */   
+  @media screen and (max-width:441px) {
+  
+    .price-span{
+    flex-direction:column;
+      text-align: right !important;
+    }
+     .product__title h1{
+      font-size: 22px !important;
+      line-height: 27px !important;
+    }
+    .after{
+      font-size: 22px !important;
+      line-height: 27px !important;
+    }
+    .before{
+      font-size: 15px !important;
+    }
+      }  
+  
+  /* 
+  Just calm
+  @media screen and (max-width:387px) {
+  
+  
+      .skio-frequency-wrapper{
+      margin-left: 0px !important;
+    }
+      } 
+  
+      @media screen and (max-width:382px) {
+  .skio-group-content-selected
+  {
+  margin-top:10px
+        
+        }
+  }
+  */
+  @media screen and (max-width:375px) {
+    .before{
+      font-size: 12px !important;
+    }
+    .after{ 
+      font-size: 18px !important;
+       } 
+  }
+  @media screen and (min-width:749px) {
+    .slider-button{
+    display:flex !important;
+    }
+  }
